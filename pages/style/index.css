@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+    overflow: overlay;
+    --scrollbarBG: #313131;
+    --thumbBG: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body::selection {
+    background-color: #aa00ff;
+    color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+.b {
+    background-color: #202020;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.starttext {
+    background: rgb(199, 113, 243);
+    background: linear-gradient(52deg, rgba(199, 113, 243, 1) 0%, rgba(169, 0, 255, 1) 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.logotext {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.startlogo {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.starttext {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.projectslogo {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.projectstext {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.contactlogo {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.contacttext {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.footerlogo {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.footertext {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.prjcimgs {
+    display: grid;
+    grid-template-columns: repeat(3, 10fr);
+    grid-template-rows: repeat(1, 10fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.img1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.img2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.img3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.img4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.img5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.img6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+img {
+    border-radius: 7px;
+    float: left;
+}
+
+h3 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    color: azure;
+    padding-left: 5px;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
